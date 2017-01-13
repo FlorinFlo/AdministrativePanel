@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Download</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/StyleSheet.css">
+    <!--Jquery  -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--Include Bootsrap js file-->
+    <script type="text/javascript" src="js/jszip.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script async="" src="js/FileSaver.min.js"></script>
+    <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="globalize/cldr.js"></script>
+    <script type="text/javascript" src="globalize/core.js"></script>
+    <script type="text/javascript" src="globalize/message.js"></script>
+    
+    <script type="text/javascript">
+        //Internationalization TO DO
+    
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid containerDownload" id="page">
+        <div class="row parent ">
+            <div class="col-md-6 col-xs-12 col-lg-6" style="padding:20px">
+                <div class="panel panel-default listCollumn">
+                    <p class="listCollumnTitle">Download Configuration File and Zip Package</p>
+                    <p class="listCollumnInstruction"> To build configuration file or zip package for a location, please select the printers on that location and click download </p>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" style="text-align:center">Select printers for location</div>
+                        <div panel-body class="listPanelBody">
+                            <ul class="list-group" id="printerList"> </ul>
+                            <div class="checkbox " style="float:right;">
+                                <label class="selectAllLabel" for="checkbox1"> Select all</label>
+                                <input type="checkbox" id="selectAll" onClick="selectAllPrinters(this)"></input>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-responsive zipBtn " onclick="downloadZip()">Download zip package for location</button>
+                    <button type="button" class="btn btn-primary btn-responsive" style="width:100%" onclick="downloadCVSFile()">Download configuration file for location only</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 col-lg-6" style="padding:20px">
+                <div class="panel panel-default panelInfo">
+                    <h4 class="panelInfoTitle">How to use this tool</h4>
+                    <div class="instructionDiv">
+                        <h4 class="instruction">1. BLA BLA BLA </h4>
+                        <h4 class="instruction">2. BLA BLA BLA </h4>
+                        <h4 class="instruction">3. BLA BLA BLA </h4>
+                        <h4 class="instruction">4. BLA BLA BLA </h4>
+                        <h4 class="instruction">5. BLA BLA BLA </h4> 
+                    </div>
+                </div>
+            </div>
+        <div class="loader" ></div>   
+        </div>
+    </div>
+    <div id="loading"></div>
+    <!--Jquery  -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--Include Bootsrap js file-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
